@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.innovaction-cameroun.org/sitemap.xml

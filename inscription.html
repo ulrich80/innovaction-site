@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription à la tontine — INNOV'ACTION Yaoundé | Formulaire en ligne</title>
+  <meta name="description" content="Inscrivez-vous en ligne à la tontine INNOV'ACTION à Yaoundé : formulaire simple et sécurisé, réponse du Bureau Exécutif sous 72 heures. Cotisations dès 5 000 FCFA par semaine, quinzaine ou mois.">
+  <link rel="canonical" href="https://www.innovaction-cameroun.org/inscription.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="INNOV'ACTION">
+  <meta property="og:title" content="Inscription à la tontine INNOV'ACTION">
+  <meta property="og:description" content="Rejoignez l'un de nos groupes de tontine : formulaire en ligne, réponse sous 72 heures.">
+  <meta property="og:url" content="https://www.innovaction-cameroun.org/inscription.html">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Karla:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="INNOV'ACTION — Accueil">
+        <img src="assets/logo.svg" alt="Logo INNOV'ACTION" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name"><span class="n1">Innov'</span><span class="n2">Action</span></span>
+          <span class="brand-tag">Innovation &amp; Développement</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="activites.html">Nos activités</a>
+        <a href="tontine.html">La Tontine</a>
+        <a href="adhesion.html">Adhésion</a>
+        <a href="contact.html">Contact</a>
+        <span class="nav-cta"><a class="btn btn-orange" href="inscription.html">Inscription Tontine</a></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Accueil</a> / Inscription Tontine</p>
+        <h1>Inscription à la tontine <span class="accent-italic">INNOV'ACTION</span></h1>
+        <p class="lead">
+          Remplissez ce formulaire pour rejoindre l'un de nos groupes de tontine. Votre demande sera examinée
+          par le Bureau Exécutif, puis vous serez contacté(e) <strong>sous 72 heures</strong> pour finaliser votre adhésion.
+          Les champs marqués d'un astérisque (<span style="color:var(--orange-bright);">*</span>) sont obligatoires.
+        </p>
+      </div>
+    </div>
+
+    <section aria-label="Formulaire d'inscription">
+      <div class="container">
+        <form id="form-tontine" class="form-shell" novalidate>
+
+          <!-- Section A -->
+          <div class="form-section-title"><span class="badge">A</span> Identité du membre</div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="nom">Nom <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+            </div>
+            <div class="field">
+              <label for="prenom">Prénom(s) <span class="req">*</span></label>
+              <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="naissance">Date de naissance <span class="req">*</span></label>
+              <input type="date" id="naissance" name="naissance" required>
+              <p class="hint">JJ/MM/AAAA</p>
+            </div>
+            <div class="field">
+              <label for="lieu-naissance">Lieu de naissance</label>
+              <input type="text" id="lieu-naissance" name="lieu-naissance">
+            </div>
+            <div class="field full">
+              <label>Sexe <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-pill"><input type="radio" name="sexe" value="Masculin" required><span>Masculin</span></label>
+                <label class="radio-pill"><input type="radio" name="sexe" value="Féminin"><span>Féminin</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cni">N° CNI ou passeport <span class="req">*</span></label>
+              <input type="text" id="cni" name="cni" required>
+              <p class="hint">Pièce d'identité en cours de validité</p>
+            </div>
+            <div class="field">
+              <label for="profession">Profession / activité <span class="req">*</span></label>
+              <input type="text" id="profession" name="profession" required>
+            </div>
+          </div>
+
+          <!-- Section B -->
+          <div class="form-section-title"><span class="badge">B</span> Coordonnées</div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="tel">Téléphone (WhatsApp) <span class="req">*</span></label>
+              <input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="+237 6XX XX XX XX" required>
+            </div>
+            <div class="field">
+              <label for="tel2">Téléphone secondaire</label>
+              <input type="tel" id="tel2" name="tel2" placeholder="Facultatif">
+            </div>
+            <div class="field">
+              <label for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="Facultatif">
+            </div>
+            <div class="field">
+              <label for="ville">Ville / quartier de résidence <span class="req">*</span></label>
+              <input type="text" id="ville" name="ville" placeholder="Ex. : Yaoundé — Mvog-Ada" required>
+            </div>
+          </div>
+
+          <!-- Section C -->
+          <div class="form-section-title"><span class="badge">C</span> Choix de la tontine</div>
+          <div class="form-grid">
+            <div class="field full">
+              <label>Statut <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-pill"><input type="radio" name="statut" value="Déjà membre de l'association" required><span>Déjà membre de l'association</span></label>
+                <label class="radio-pill"><input type="radio" name="statut" value="Nouvelle adhésion"><span>Nouvelle adhésion</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="montant">Montant de la cotisation <span class="req">*</span></label>
+              <select id="montant" name="montant" required>
+                <option value="" disabled selected>— Choisir un montant —</option>
+                <option value="5 000 FCFA">5 000 FCFA</option>
+                <option value="10 000 FCFA">10 000 FCFA</option>
+                <option value="25 000 FCFA">25 000 FCFA</option>
+                <option value="50 000 FCFA">50 000 FCFA</option>
+                <option value="Autre">Autre (à préciser)</option>
+              </select>
+            </div>
+            <div class="field" id="montant-autre-wrap" style="display:none;">
+              <label for="montant-autre">Précisez le montant</label>
+              <input type="text" id="montant-autre" name="montant-autre" placeholder="Ex. : 15 000 FCFA">
+            </div>
+            <div class="field full">
+              <label>Fréquence de cotisation <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-pill"><input type="radio" name="frequence" value="Hebdomadaire" required><span>Hebdomadaire</span></label>
+                <label class="radio-pill"><input type="radio" name="frequence" value="Bimensuelle"><span>Bimensuelle</span></label>
+                <label class="radio-pill"><input type="radio" name="frequence" value="Mensuelle"><span>Mensuelle</span></label>
+              </div>
+            </div>
+            <div class="field full">
+              <label>Mode de paiement préféré <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-pill"><input type="radio" name="paiement" value="Mobile Money (MTN MoMo)" required><span>Mobile Money (MTN MoMo)</span></label>
+                <label class="radio-pill"><input type="radio" name="paiement" value="Orange Money"><span>Orange Money</span></label>
+                <label class="radio-pill"><input type="radio" name="paiement" value="Espèces en réunion"><span>Espèces en réunion</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="momo">Numéro Mobile Money</label>
+              <input type="tel" id="momo" name="momo" placeholder="Si paiement par Mobile Money">
+            </div>
+            <div class="field">
+              <label for="debut">Date souhaitée de début</label>
+              <input type="date" id="debut" name="debut">
+              <p class="hint">Facultatif — l'ordre de passage sera défini avec le groupe lors de la première réunion.</p>
+            </div>
+          </div>
+
+          <!-- Section D -->
+          <div class="form-section-title"><span class="badge">D</span> Personne à prévenir / bénéficiaire</div>
+          <p style="font-size:0.92rem; margin-bottom:1.1rem;">
+            En cas d'empêchement ou de décès, la personne désignée ci-dessous pourra être contactée
+            conformément au règlement intérieur.
+          </p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="benef-nom">Nom et prénom du bénéficiaire <span class="req">*</span></label>
+              <input type="text" id="benef-nom" name="benef-nom" required>
+            </div>
+            <div class="field">
+              <label for="benef-lien">Lien avec le membre <span class="req">*</span></label>
+              <input type="text" id="benef-lien" name="benef-lien" placeholder="Ex. : conjoint(e), frère, sœur…" required>
+            </div>
+            <div class="field full">
+              <label for="benef-tel">Téléphone du bénéficiaire <span class="req">*</span></label>
+              <input type="tel" id="benef-tel" name="benef-tel" required>
+            </div>
+          </div>
+
+          <!-- Section E -->
+          <div class="form-section-title"><span class="badge">E</span> Engagement et consentement</div>
+          <div class="consent-box">
+            <label>
+              <input type="checkbox" required>
+              <span>Je certifie que les informations fournies sont exactes. <span class="req" style="color:var(--orange-bright);">*</span></span>
+            </label>
+            <label>
+              <input type="checkbox" required>
+              <span>J'ai lu et j'accepte les statuts et le règlement intérieur de l'association INNOV'ACTION, notamment les règles relatives aux cotisations, aux échéances et aux sanctions en cas de non-paiement. <span class="req" style="color:var(--orange-bright);">*</span></span>
+            </label>
+            <label>
+              <input type="checkbox" required>
+              <span>J'accepte que mes données soient utilisées par l'association uniquement pour la gestion de la tontine et la communication interne. <span class="req" style="color:var(--orange-bright);">*</span></span>
+            </label>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-orange">Envoyer ma demande d'inscription
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note">
+              🔒 Vos informations sont transmises directement au Bureau Exécutif via WhatsApp et ne sont jamais cédées à des tiers.
+            </p>
+          </div>
+
+          <div id="form-success" class="form-success" role="status">
+            <h3>Merci ! Votre demande a bien été préparée. ✅</h3>
+            <p>
+              Votre demande d'inscription a bien été reçue. Le Bureau Exécutif l'examinera et vous serez
+              contacté(e) sous 72 heures au numéro indiqué. Pour toute question :
+              <a href="contact.html">rubrique Contact</a>.
+            </p>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- Réassurance sous le formulaire -->
+    <section class="band-cream" aria-label="Garanties" style="padding:3rem 0;">
+      <div class="container">
+        <div class="cards-grid" style="grid-template-columns:repeat(3, 1fr);">
+          <div class="card reveal" style="text-align:center;">
+            <span class="card-icon ic-green" style="margin-inline:auto;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </span>
+            <h3>Association légale</h3>
+            <p>Récépissé N° 000842/RDA/J06/SAAJP/BAPP — Préfecture du Mfoundi.</p>
+          </div>
+          <div class="card reveal reveal-d1" style="text-align:center;">
+            <span class="card-icon ic-orange" style="margin-inline:auto;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <h3>Réponse sous 72 h</h3>
+            <p>Le Bureau Exécutif examine chaque demande et vous recontacte rapidement.</p>
+          </div>
+          <div class="card reveal reveal-d2" style="text-align:center;">
+            <span class="card-icon ic-blue" style="margin-inline:auto;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </span>
+            <h3>Données protégées</h3>
+            <p>Vos informations servent uniquement à la gestion de la tontine et à la communication interne.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="Logo INNOV'ACTION" width="46" height="46">
+            <span class="brand-name"><span class="n1">Innov'</span><span class="n2">Action</span></span>
+          </div>
+          <p>INNOV'ACTION — Association d'Innovation et de Développement. Entraide, inclusion financière, formation et développement durable — Yaoundé, Cameroun.</p>
+        </div>
+        <div>
+          <h4>Liens rapides</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="activites.html">Nos activités</a></li>
+            <li><a href="tontine.html">La Tontine</a></li>
+            <li><a href="adhesion.html">Adhésion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Yaoundé, Cameroun
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Tél. / WhatsApp : [à compléter]
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              E-mail : [à compléter]
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 9H15V6.5h-1.5c-1.933 0-3.5 1.567-3.5 3.5v1.5H8v2.5h2V21h2.5v-7H15l.5-2.5h-3V10a1 1 0 0 1 1-1z"/></svg>
+              <a href="https://www.facebook.com/share/1DivfpZUDF/" target="_blank" rel="noopener">Suivez-nous sur Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 INNOV'ACTION — Association déclarée, récépissé N° 000842/RDA/J06/SAAJP/BAPP du 29 mai 2026 (Préfecture du Mfoundi). Tous droits réservés.</span>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

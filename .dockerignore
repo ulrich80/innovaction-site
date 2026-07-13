@@ -1,0 +1,7 @@
+.git
+.claude
+.dockerignore
+Dockerfile
+GUIDE-PERSONNALISATION.md
+README.md
+*.docx

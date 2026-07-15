@@ -27,6 +27,24 @@ var WHATSAPP_NUMBER = "237600000000"; // ← À REMPLACER
   });
 })();
 
+/* ---------- Menu déroulant « Nos services » ---------- */
+(function () {
+  var btn = document.querySelector(".nav-sub-btn");
+  var menu = document.querySelector(".nav-sub-menu");
+  if (!btn || !menu) return;
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var open = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && e.target !== btn) {
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+})();
+
 /* ---------- Animations d'apparition au défilement ---------- */
 (function () {
   var items = document.querySelectorAll(".reveal");
@@ -131,7 +149,9 @@ function radioValue(form, name) {
       "*E. Engagements*",
       "✔ Informations certifiées exactes",
       "✔ Statuts et règlement intérieur acceptés",
-      "✔ Consentement à l'utilisation des données"
+      "✔ Consentement à l'utilisation des données",
+      "",
+      "📎 Je joins ci-dessous la photo de ma pièce d'identité (CNI recto/verso ou passeport)."
     ];
 
     var url =

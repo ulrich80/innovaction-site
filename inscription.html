@@ -33,12 +33,28 @@
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="activites.html">Nos activités</a>
-        <a href="tontine.html">La Tontine</a>
-        <a href="adhesion.html">Adhésion</a>
+        <a href="a-propos.html">Qui sommes-nous ?</a>
+        <div class="nav-sub">
+          <button class="nav-sub-btn" type="button" aria-expanded="false" aria-haspopup="true">Nos services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="nav-sub-menu">
+            <a href="activites.html#tontine">Tontine &amp; cotisations</a>
+            <a href="activites.html#epargne">Épargne solidaire</a>
+            <a href="activites.html#formations">Formations pratiques</a>
+            <a href="activites.html#accompagnement">Accompagnement AGR</a>
+            <a href="adhesion.html">Adhésion / Devenir membre</a>
+          </div>
+        </div>
+        <a href="tontine.html">La tontine</a>
+        <a href="activites.html#projets">Nos projets</a>
+        <a href="actualites.html">Actualités</a>
         <a href="contact.html">Contact</a>
-        <span class="nav-cta"><a class="btn btn-orange" href="inscription.html">Inscription Tontine</a></span>
+        <span class="nav-cta"><a class="btn btn-primary" href="inscription.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Rejoindre la tontine
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></span>
       </nav>
     </div>
   </header>
@@ -96,6 +112,16 @@
             <div class="field">
               <label for="profession">Profession / activité <span class="req">*</span></label>
               <input type="text" id="profession" name="profession" required>
+            </div>
+            <div class="field full">
+              <div class="consent-box" style="margin-top:0.2rem; background:var(--blue-soft); border-color:rgba(29,95,160,0.3);">
+                <label style="cursor:default;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px; height:22px; flex:none; margin-top:2px;"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M15 8h4M15 12h4M7 16h10"/></svg>
+                  <span><strong>Photo de votre pièce d'identité :</strong> après l'envoi du formulaire, une conversation
+                  WhatsApp s'ouvrira automatiquement avec le Bureau Exécutif. <strong>Joignez-y directement la photo
+                  de votre CNI (recto et verso)</strong> ou de votre passeport pour compléter votre dossier.</span>
+                </label>
+              </div>
             </div>
           </div>
 
@@ -222,9 +248,10 @@
           <div id="form-success" class="form-success" role="status">
             <h3>Merci ! Votre demande a bien été préparée. ✅</h3>
             <p>
-              Votre demande d'inscription a bien été reçue. Le Bureau Exécutif l'examinera et vous serez
-              contacté(e) sous 72 heures au numéro indiqué. Pour toute question :
-              <a href="contact.html">rubrique Contact</a>.
+              Votre demande d'inscription a bien été reçue. <strong>N'oubliez pas de joindre la photo de votre
+              CNI (recto/verso) dans la conversation WhatsApp qui vient de s'ouvrir.</strong> Le Bureau Exécutif
+              examinera votre dossier et vous serez contacté(e) sous 72 heures au numéro indiqué.
+              Pour toute question : <a href="contact.html">rubrique Contact</a>.
             </p>
           </div>
 

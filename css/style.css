@@ -1230,8 +1230,8 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; position: relative; }
   position: absolute;
   top: 0;
   right: 0;
-  bottom: clamp(70px, 8vw, 105px);
-  width: 60%;
+  bottom: 0;
+  width: 62%;
   z-index: 1;
 }
 .hero2-img img {
@@ -1239,8 +1239,15 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; position: relative; }
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  -webkit-mask-image: linear-gradient(100deg, transparent 2%, #000 30%);
-          mask-image: linear-gradient(100deg, transparent 2%, #000 30%);
+  /* Fondu sur tous les bords : gauche + haut + bas (le bord droit touche l'écran) */
+  -webkit-mask-image:
+    linear-gradient(100deg, transparent 2%, #000 32%),
+    linear-gradient(180deg, transparent 0%, #000 16%, #000 72%, transparent 97%);
+  -webkit-mask-composite: source-in;
+          mask-image:
+    linear-gradient(100deg, transparent 2%, #000 32%),
+    linear-gradient(180deg, transparent 0%, #000 16%, #000 72%, transparent 97%);
+          mask-composite: intersect;
 }
 
 .hero2-wave {
@@ -1461,8 +1468,14 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; position: relative; }
     margin-bottom: -40px;
   }
   .hero2-img img {
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%);
-            mask-image: linear-gradient(180deg, transparent 0%, #000 18%);
+    -webkit-mask-image:
+      linear-gradient(180deg, transparent 0%, #000 20%, #000 78%, transparent 100%),
+      linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    -webkit-mask-composite: source-in;
+            mask-image:
+      linear-gradient(180deg, transparent 0%, #000 20%, #000 78%, transparent 100%),
+      linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+            mask-composite: intersect;
   }
   .hero2 { padding-bottom: 0; }
   .hero2-wave { position: relative; margin-top: -50px; }

@@ -1551,3 +1551,18 @@ section { padding: clamp(4rem, 8vw, 6.5rem) 0; position: relative; }
 
 /* Ancres : compenser le header sticky */
 [id] { scroll-margin-top: 96px; }
+
+/* ============================================================
+   Variantes de colonnes des grilles de cartes (responsives)
+   Remplacent les anciens styles inline qui cassaient le mobile
+   ============================================================ */
+.cards-grid.cards-2col { grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
+.cards-grid.cards-3col { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 1020px) {
+  .cards-grid.cards-3col { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .cards-grid.cards-2col,
+  .cards-grid.cards-3col { grid-template-columns: 1fr; }
+}

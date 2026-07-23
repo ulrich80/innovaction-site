@@ -18,7 +18,9 @@ Site vitrine 100 % statique (HTML/CSS/JS vanilla, aucun build, aucune dépendanc
 - **`js/main.js`** — single script, IIFE per feature: mobile nav, services dropdown, scroll-reveal animations (`.reveal` → `.visible` via IntersectionObserver with fallbacks), floating WhatsApp link, and the two forms.
 - **Forms have no backend**: `#form-tontine` (inscription.html) and `#form-contact` (contact.html) build a formatted message and open `https://wa.me/<WHATSAPP_NUMBER>?text=...`. `WHATSAPP_NUMBER` is defined at the top of `js/main.js`.
 - **SEO is per-page**: each HTML file carries its own title/description/canonical/Open Graph tags; index.html and tontine.html embed JSON-LD (NGO + FAQ). `sitemap.xml` and `robots.txt` must be updated when pages are added.
-- **Dockerfile copies files explicitly**: a new HTML page must be added to the `COPY` line in the Dockerfile (note: `actualites.html` is currently missing from it) and to `sitemap.xml`.
+- **Dockerfile copies files explicitly**: a new HTML page must be added to the `COPY` line in the Dockerfile and to `sitemap.xml`.
+- **Cache-busting**: Nginx caches css/js for 30 days, so every HTML page references `css/style.css?v=<date>` and `js/main.js?v=<date>`. When editing style.css or main.js, bump the `?v=` value in **all** HTML files or phones will keep the old version.
+- **No inline `grid-template-columns`** in HTML: inline styles beat the responsive media queries and break mobile. Use the `.cards-2col` / `.cards-3col` variants (end of style.css) or add a new class.
 
 ## Pre-production placeholders (see GUIDE-PERSONNALISATION.md)
 

@@ -22,6 +22,6 @@ Site vitrine 100 % statique (HTML/CSS/JS vanilla, aucun build, aucune dépendanc
 
 ## Pre-production placeholders (see GUIDE-PERSONNALISATION.md)
 
-- `WHATSAPP_NUMBER = "237600000000"` in `js/main.js` is a placeholder — the forms depend on it.
-- `[à compléter]` markers in footers and contact.html (phone, e-mail, address, meeting times).
+- Official numbers are set: `WHATSAPP_NUMBER = "237687789939"` in `js/main.js` (forms), calls 694 680 847 (footers + contact.html).
+- Remaining `[à compléter]` markers: e-mail (footers + contact.html), address details and meeting times (contact.html).
 - The domain `www.innovaction-cameroun.org` is provisional; it appears in all HTML heads, `sitemap.xml`, and `robots.txt`.

@@ -8,7 +8,7 @@
    de l'association (format international, sans "+" ni espaces).
    Exemple pour +237 6 90 12 34 56  →  "237690123456"
    ------------------------------------------------------------ */
-var WHATSAPP_NUMBER = "237600000000"; // ← À REMPLACER
+var WHATSAPP_NUMBER = "237687789939"; // Numéro WhatsApp officiel de l'association
 
 /* ---------- Navigation mobile ---------- */
 (function () {
